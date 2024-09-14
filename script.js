@@ -1,4 +1,5 @@
-const endPoint = "http://192.168.200.60";
+// Contoh: Jika Anda menggunakan IP Publik atau DDNS
+const endPoint = "http://your-public-ip:80";  // atau menggunakan DDNS
 
 let allLampsOn = false;  // Status apakah semua lampu sedang dinyalakan atau tidak
 
