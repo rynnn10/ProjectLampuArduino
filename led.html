@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="layouts">
+      <section class="navbar">
+        <h3>PROJECT</h3>
+      </section>
+      <section class="page-title">
+        <h3>LED CONTROL</h3>
+      </section>
+      <section class="leds">
+        <div class="led">
+          <img src="Asset/led-off.png" class="led-image" id="dapurLedImage" alt="" />
+          <p class="led-location-text">DAPUR</p>
+          <button class="led-submit" id="ledDapur" onclick="setDapurLed()">NYALAKAN</button>
+        </div>
+        <div class="led">
+          <img src="Asset/led-off.png" class="led-image" id="tamuLedImage" alt="" />
+          <p class="led-location-text">TAMU</p>
+          <button class="led-submit" id="ledTamu" onclick="setTamuLed()">NYALAKAN</button>
+        </div>
+        <div class="led">
+          <img src="Asset/led-off.png" class="led-image" id="makanLedImage" alt="" />
+          <p class="led-location-text">RUANG MAKAN</p>
+          <button class="led-submit" id="ledMakan" onclick="setMakanLed()">NYALAKAN</button>
+        </div>
+        <!-- <div class="led">
+          <img src="Asset/led-off.png" class="led-image" id="toiletLedImage" alt="" />
+          <p class="led-location-text">TOILET</p>
+          <button class="led-submit" id="ledToilet" onclick="setToiletLed()">NYALAKAN</button>
+        </div> -->
+        
+      </section>
+      <section class="control-all">
+        <button class="led-submit" id="controlAllButton" onclick="toggleAllLamps()">NYALAKAN SEMUA LAMPU</button>
+      </section>  
+      <section class="bottombar">
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-home"></i></a>
+          </li>
+          <li>
+            <a href="led.html"><i class="fa-solid fa-lightbulb"></i></a>
+          </li>
+          <li>
+            <a href="kipas.html"><i class="fa-solid fa-fan"></i></a>
+          </li>
+          <li>
+            <a href="user.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
